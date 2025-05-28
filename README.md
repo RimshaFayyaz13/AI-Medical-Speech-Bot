@@ -1,55 +1,58 @@
-🩺 AI Medical Chatbot
-An intelligent AI-powered medical assistant that can analyze medical images (e.g., skin conditions like acne) and text queries to predict possible diseases or conditions. Built using Groq API with the LLaMA 3 model family for fast and accurate AI reasoning.
+## 🩺 AI Medical Chatbot
+An intelligent AI-powered medical assistant that can analyze medical images (e.g., skin conditions like acne) and text queries to predict possible diseases or conditions. Built using the Groq API with the LLaMA 3.1 8B Instant model for fast and accurate AI reasoning.
 
-🚀 Features
-🖼️ Accepts image input (e.g., skin conditions, medical reports).
+## 🚀 Features
+🖼️ Image Input: Analyze medical images (e.g., skin conditions, reports).
 
-🧠 Accepts text queries along with images.
+🧠 Multimodal Queries: Accepts both text and image input for improved context and prediction.
 
-🔥 Uses Groq's LLaMA 3.1 8B Instant model for fast response.
+⚡ Fast Responses: Utilizes Groq's LLaMA 3.1 8B Instant model.
 
-📦 Clean project structure for easy scalability.
+🧩 Modular Design: Clean and scalable project structure for easy enhancements.
 
-🛠️ Installation
-Clone the repository
-
-bash
-Copy code
+## 🛠️ Installation
+1. Clone the Repository
+   
 git clone https://github.com/RimshaFayyaz13/ai-medical-chatbot.git
 cd ai-medical-chatbot
-Create and activate a virtual environment
 
-Windows:
+3. Create and Activate a Virtual Environment
+On Windows:
 
-bash
-Copy code
 python -m venv chatenv
 chatenv\Scripts\activate
+On macOS/Linux:
 
-📸 How It Works
-The script reads an image, encodes it in base64, and sends it to Groq API.
+python3 -m venv chatenv
+source chatenv/bin/activate
 
-Along with the image, a text query (like "What disease is shown?") is sent.
+## 📸 How It Works
+The script reads and encodes a medical image (e.g., images/acne.jpg) in Base64.
 
-The AI model predicts and sends a response back.
+A text query like "What disease is shown?" is combined with the image.
 
-Example image input: images/acne.jpg
-Example query: "What is the disease in the image?"
+Both the image and query are sent to the Groq API.
 
-⚙️ Technologies Used
-Python 3
+The LLaMA model analyzes the input and returns a diagnostic response.
 
-Groq API
+## ⚙️ Technologies Used
+✅ Python 3
 
-ffmpeg
+✅ Groq API
 
-Base64 Encoding
+✅ Base64 Encoding
 
-🤝 Contributing
-Pull requests are welcome!
-For major changes, please open an issue first to discuss what you would like to change.
+✅ ffmpeg (for image/audio preprocessing)
 
-📜 License
-This project is licensed under the MIT License.
+🧪 Example
+## Input Type	Example
+Image	images/acne.jpg
+Query	"What is the disease in the image?"
+Output	"The condition appears to be acne vulgaris. You may consult a dermatologist."
 
-🚀 Let's build the future of AI-driven healthcare together!
+## 🤝 Contributing
+Contributions are welcome! 💬
+
+If you'd like to propose a new feature or improvement, feel free to open an issue.
+
+For pull requests, please make sure your changes are well-tested and documented.
